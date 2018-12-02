@@ -1,0 +1,60 @@
+/* 全体のヘッダー */
+.global-header {
+  height: 47px;
+  z-index: 2;
+  /* TODO:仮 */
+  background-color: silver;
+}
+.global-header ul {
+  list-style: none;
+}
+.global-header li {
+  float: left;
+}
+.header-right {
+  float: right;
+}
+.header-right .search {
+  float: left;
+}
+.global-header .search input[type="text"] {
+  border-radius: 15px;
+}
+.global-header form {
+  position: relative;
+}
+.global-header form .moment {
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 0;
+}
+.header-right .login{
+  float: left;
+}
+/* プロフィールのヘッダー */
+.profile-header {
+  z-index: 1;
+}
+.header-image {
+  height: 500px;
+  background-image: url(header-image.jpg);
+  background-size: cover;
+}
+.profile-navbar {
+  background-color: silver;
+}
+.profile-navbar .navbar {
+  background-color: transparent;
+  border: 0;
+}
+.profile-navbar ul {
+  list-style: none;
+}
+.is-fixed {
+  position: fixed;
+  width: 100%;
+}

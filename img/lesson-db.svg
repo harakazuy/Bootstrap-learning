@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/lesson</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="component/overview" transform="translate(-436.000000, -58.000000)">
+            <g id="overview">
+                <g id="Stacked-Group" transform="translate(131.000000, 24.000000)">
+                    <g id="Group-8" transform="translate(303.000000, 21.000000)">
+                        <g id="Group-3" transform="translate(2.000000, 0.000000)">
+                            <g id="icon/lesson" transform="translate(0.000000, 14.000000)">
+                                <g id="icn_lesson-recent">
+                                    <path d="M2.52,13.984 L2.52,13.996 C1.534,13.996 0.734,14.795 0.734,15.782 C0.734,16.768 1.534,17.568 2.52,17.568 L2.52,17.579 L17.734,17.579 L17.734,13.984 L2.52,13.984" id="Fill-1" fill="#FFFFFF"></path>
+                                    <path d="M3.101,13.984 L3.101,13.996 C2.2,13.996 1.47,14.795 1.47,15.782 C1.47,16.768 2.2,17.568 3.101,17.568 L3.101,17.579 L16.998,17.579 L16.998,13.984 L3.101,13.984 L3.101,13.984 Z M5.09,1.782 L5.09,13.628 L5.09,1.782 Z M16.998,15.822 L1.47,15.822 L1.47,1.651 C1.47,1.098 1.918,0.65 2.47,0.65 L16.998,0.65 L16.998,15.822 L16.998,15.822 Z" id="Stroke-2" stroke="#8491A5" stroke-width="1.33333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M2.52,13.984 L2.52,13.996 C1.534,13.996 0.734,14.795 0.734,15.782 C0.734,16.768 1.534,17.568 2.52,17.568 L2.52,17.579 L17.734,17.579 L17.734,13.984 L2.52,13.984" id="Fill-3" fill="#57D6C2"></path>
+                                    <path d="M3.101,13.984 L3.101,13.996 C2.2,13.996 1.47,14.795 1.47,15.782 C1.47,16.768 2.2,17.568 3.101,17.568 L3.101,17.579 L16.998,17.579 L16.998,13.984 L3.101,13.984 L3.101,13.984 Z M5.09,1.782 L5.09,13.628 L5.09,1.782 Z" id="Stroke-4" stroke="#8491A5" stroke-width="1.33333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <polyline id="Fill-5" fill="#8491A5" points="14.595 8.269 12.594 7.269 10.594 8.269 10.594 0.697 14.595 0.697 14.595 8.269"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

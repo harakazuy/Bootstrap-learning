@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/progate-stylesheet.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script></script>
+  <title>learning-progate</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-logo">
+      <a href="#">
+        <img src="../img/header_logo.svg">
+      </a>
+    </div>
+    <nav class="nav-left">
+      <ul>
+        <li>
+          <a href="#">レッスン一覧</a>
+        </li>
+        <li>
+          <a href="#">スライド検索</a>
+        </li>
+        <li>
+          <a href="#">ランキング</a>
+        </li>
+        <li>
+          <a href="#">ヘルプ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav-right">
+      <ul>
+        <li class="my-menu">
+          <img src="../img/photo.jpg">
+          <span>原和也(Lv.26)</span>
+          <i class="fas fa-sort-down"></i>
+        </li>
+        <li class="vertical-line"></li>
+        <li>
+          <img src="../img/friends-icon.svg">
+        </li>
+        <li>
+          <img src="../img/notification_off.svg">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- contents -->
+  <main>
+    <div class="main">
+      <div id="dashboard-wrapper" class="pg-container">
+        <div id="dashboard">
+          <div class="container dashboard-container">
+            <!-- left -->
+            <div class="dashboard__left-container">
+              <!-- user-profile -->
+              <div class="c-card">
+                <div class="row user-profile">
+                  <div class="user-profile__basic-details">
+                    <div class="user-profile__image">
+                      <img src="../img/photo.jpg" class="profile-image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- next-lesson -->
+              <div class="next-lesson row">
+                <h2 class="dashboard__section-heading">
+                  <img src="../img/lesson-db.svg">
+                  前回の続き
+                </h2>
+                <div class="in-progress-lesson-card c-card">
+                  <div class="in-progress-lesson-card__language lesson-card--html-study">
+                    <div class="c-lesson-theme__image c-lesson-theme__image--html-study"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- in-progress-lessons -->
+              <div id="in-progress-lessons">
+                <h2 class="dashboard__section-heading">
+                  <img src="../img/lesson-db.svg">
+                  学習中のレッスン
+                </h2>
+                <div>
+                  <div class="dashboard__lesson-heading">
+                    <div class="dashboard__platform-toggle-button-container">
+                      <div id="platform-toggle-button-web" class="dashboard__platform-toggle-button">
+                        <!-- TODO:SVG対応 <div class="dashboard__platform-toggle-button-icon"></div> -->
+                        <p>Web</p>
+                      </div>
+                      <div id="platform-toggle-button-mobile" class="dashboard__platform-toggle-button dashboard__platform-toggle-button--inactive">
+                        <!-- TODO:SVG対応 -->
+                        <p>アプリ</p>
+                      </div>
+                    </div>
+                    <div class="lesson-link">
+                      <a href="#">学習中のレッスン一覧へ &gt;</a>
+                    </div>
+                  </div>
+                  <div class="row dashboard__in-progress-lessons">
+                    <div class="in-progress-lesson-wrapper">
+                      <div class="in-progress-lesson-card c-card">
+                        <div class="in-progress-lesson-card__language lesson-card--rails5-study">
+                          <div class="c-lesson-theme__image c-lesson-theme__image--rails5-study"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-progress-lesson-wrapper"></div>
+                  </div>
+                  <div class="row dashboard__in-progress-lessons">
+                    <div class="in-progress-lesson-wrapper">
+                      <div class="in-progress-lesson-card c-card">
+                        <div class="in-progress-lesson-card__language lesson-card--html-study">
+                          <div class="c-lesson-theme__image c-lesson-theme__image--html-study"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-progress-lesson-wrapper"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- completed-lessons -->
+              <div id="in-progress-lessons">
+                <h2 class="dashboard__section-heading">
+                  <img src="../img/lesson-db.svg">
+                  修了レッスン
+                </h2>
+                <div>
+                  <div class="row dashboard__lesson-heading">
+                    <div class="dashboard__platform-toggle-button-container">
+                      <div id="platform-toggle-button-web" class="dashboard__platform-toggle-button">
+                        <!-- TODO:SVG対応 <div class="dashboard__platform-toggle-button-icon"></div> -->
+                        <p>Web</p>
+                      </div>
+                      <div id="platform-toggle-button-mobile" class="dashboard__platform-toggle-button dashboard__platform-toggle-button--inactive">
+                        <!-- TODO:SVG対応 -->
+                        <p>アプリ</p>
+                      </div>
+                    </div>
+                    <div class="lesson-link">
+                      <a href="#">修了レッスン一覧へ &gt;</a>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="web-complete-lessons" class="dashboard__completed-lessons">
+                      <div class="lesson-card-wrapper">
+                        <div class="lesson-card lesson-card--html-dojo">
+                          <div class="lesson-card__ribbon-wrapper">
+                            <div class="lesson-card__ribbon">
+                              <img src="../img/ribbon.svg">
+                            </div>
+                          </div>
+                          <div class="lesson-card__title">道場コース</div>
+                          <div class="lesson-card__subtitle">HTML & CSS 中級編</div>
+                          <div class="lesson-card__image-wrapper">
+                            <div class="lesson-card__dojo-html-cleared"></div>
+                          </div>
+                          <div class="lesson-card__review-wrapper">
+                            <div class="lesson-card__review">
+                              復習する
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-card-wrapper">
+                        <div class="lesson-card lesson-card--html-dojo">
+                          <div class="lesson-card__ribbon-wrapper">
+                            <div class="lesson-card__ribbon">
+                              <img src="../img/ribbon.svg">
+                            </div>
+                          </div>
+                          <div class="lesson-card__title">道場コース</div>
+                          <div class="lesson-card__subtitle">HTML & CSS 中級編</div>
+                          <div class="lesson-card__image-wrapper">
+                            <div class="lesson-card__dojo-html-cleared"></div>
+                          </div>
+                          <div class="lesson-card__review-wrapper">
+                            <div class="lesson-card__review">
+                              復習する
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-card-wrapper">
+                        <div class="lesson-card lesson-card--html-dojo">
+                          <div class="lesson-card__ribbon-wrapper">
+                            <div class="lesson-card__ribbon">
+                              <img src="../img/ribbon.svg">
+                            </div>
+                          </div>
+                          <div class="lesson-card__title">道場コース</div>
+                          <div class="lesson-card__subtitle">HTML & CSS 中級編</div>
+                          <div class="lesson-card__image-wrapper">
+                            <div class="lesson-card__dojo-html-cleared"></div>
+                          </div>
+                          <div class="lesson-card__review-wrapper">
+                            <div class="lesson-card__review">
+                              復習する
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-card-wrapper">
+                        <div class="lesson-card lesson-card--html-dojo">
+                          <div class="lesson-card__ribbon-wrapper">
+                            <div class="lesson-card__ribbon">
+                              <img src="../img/ribbon.svg">
+                            </div>
+                          </div>
+                          <div class="lesson-card__title">道場コース</div>
+                          <div class="lesson-card__subtitle">HTML & CSS 中級編</div>
+                          <div class="lesson-card__image-wrapper">
+                            <div class="lesson-card__dojo-html-cleared"></div>
+                          </div>
+                          <div class="lesson-card__review-wrapper">
+                            <div class="lesson-card__review">
+                              復習する
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lesson-card-wrapper">
+                        <div class="lesson-card lesson-card--html-dojo">
+                          <div class="lesson-card__ribbon-wrapper">
+                            <div class="lesson-card__ribbon">
+                              <img src="../img/ribbon.svg">
+                            </div>
+                          </div>
+                          <div class="lesson-card__title">道場コース</div>
+                          <div class="lesson-card__subtitle">HTML & CSS 中級編</div>
+                          <div class="lesson-card__image-wrapper">
+                            <div class="lesson-card__dojo-html-cleared"></div>
+                          </div>
+                          <div class="lesson-card__review-wrapper">
+                            <div class="lesson-card__review">
+                              復習する
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dashboard__empty-completed-lesson"></div>
+                      <div class="dashboard__empty-completed-lesson"></div>
+                      <div class="dashboard__empty-completed-lesson"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="dashboard__right-container">
+              <!-- progress-calendar -->
+              <div class="progress-calendar-wrapper">
+                <h2 class="dashboard__section-heading">学習カレンダー</h2>
+                <div class="row progress-calendar__row-header">
+                  <div class="progress-calendar__day-heading">月</div>
+                  <div class="progress-calendar__day-heading">火</div>
+                  <div class="progress-calendar__day-heading">水</div>
+                  <div class="progress-calendar__day-heading">木</div>
+                  <div class="progress-calendar__day-heading">金</div>
+                  <div class="progress-calendar__day-heading">土</div>
+                  <div class="progress-calendar__day-heading">日</div>
+                </div>
+                <div class="progress-calendar">
+                  <!-- month -->
+                  <div class="progress-calendar__month-headings-container">
+                    <div class="progress-calendar__month-heading progress-calendar__month-heading--row-2">
+                      11月
+                    </div>
+                  </div>
+                  <!-- calendar -->
+                  <div class="progress-calendar__columns">
+                    <div class="row progress-calendar__row">
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                    </div>
+                    <div class="row progress-calendar__row">
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                    </div>
+                    <div class="row progress-calendar__row">
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                    </div>
+                    <div class="row progress-calendar__row">
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                    </div>
+                    <div class="row progress-calendar__row">
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                      <div class="progress-calendar__tile progress-calendar__tile--no-count"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-calendar__legend">
+                  <div class="progress-calendar__legend-low-label">少ない</div>
+                  <div class="progress-calendar__legend-tile progress-calendar__tile--no-count"></div>
+                  <div class="progress-calendar__legend-tile progress-calendar__tile--low-count"></div>
+                  <div class="progress-calendar__legend-tile progress-calendar__tile--medium-count"></div>
+                  <div class="progress-calendar__legend-tile progress-calendar__tile--medium-high-count"></div>
+                  <div class="progress-calendar__legend-tile progress-calendar__tile--high-count"></div>
+                  <div class="progress-calendar__legend-high-label">多い</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-logo">
+              <img src="../img/progate.svg">
+            </div>
+            <p class="footer__message">Learn to code, learn to be creative.</p>
+            <div class="footer-left__sns-link">
+              <a href="#" class="twitter-link">
+                <i class="fab fa-twitter"></i>
+                Follow @prog_8
+              </a>
+              <a href="#" class="fb-like">
+                <i class="fas fa-thumbs-up"></i>
+                &nbsp;Like
+              </a>
+            </div>
+            <div class="app-download-links">
+              <p class="app-dl">アプリ版のダウンロードはこちら</p>
+              <a href="#">
+                <img src="../img/app-store-download.svg">
+              </a>
+              <a href="#">
+                <img src="../img/google-play-download.svg">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <h4>サービス</h4>
+            <ul class="footer-menus">
+              <li>
+                <a href="#">レッスン一覧</a>
+              </li>
+              <li>
+                <a href="#">有料会員プラン</a>
+              </li>
+              <li>
+                <a href="#">中学・高校向けプラン</a>
+              </li>
+              <li>
+                <a href="#">ダッシュボード</a>
+              </li>
+              <li>
+                <a href="#">サクセスインタビュー</a>
+              </li>
+              <li>
+                <a href="#">ブログ</a>
+              </li>
+              <li>
+                <a href="#">ヘルプ</a>
+              </li>
+            </ul>
+            <h4>提携サービス</h4>
+            <ul class="footer-menus">
+              <li>
+                <a href="#">レバテックキャリア</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h4>サポート</h4>
+            <ul class="footer-menus">
+              <li>
+                <a href="#">運営会社</a>
+              </li>
+              <li>
+                <a href="#">Progateの紹介について</a>
+              </li>
+              <li>
+                <a href="#">採用情報</a>
+              </li>
+              <li>
+                <a href="#">利用規約</a>
+              </li>
+              <li>
+                <a href="#">法人プラン利用規約</a>
+              </li>
+              <li>
+                <a href="#">特定商取引法に基づく表示</a>
+              </li>
+              <li>
+                <a href="#">プライバシーポリシー</a>
+              </li>
+            </ul>
+            <h4>SNS</h4>
+            <ul class="footer-menus">
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h4>法人向けサービス</h4>
+            <div class="biz-banner">
+              <div>
+                <img src="../img/progate-biz-logo.svg">
+              </div>
+            </div>
+            <p class="biz-info">
+              企業のプログラミング研修を支援する、法人のお客様向けの利用プランです。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- opinion button -->
+  <div class="opinion-button">
+    <i class="material-icons">mail_outline</i>
+    ご意見箱
+  </div>
+
+</body>

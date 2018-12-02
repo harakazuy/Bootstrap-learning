@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      var $nav = $('#profile-header');
+      var navPos = $nav.offset().top;
+      var fixed = 'is-fixed';
+
+      $(window).on('load scroll', function(){
+        if($(this).scrollTop() > navPos){
+          $nav.addClass(fixed);
+        }else{
+          $nav.removeClass(fixed);
+        }
+      });
+    });
+  </script>
+  <title>learning-twitter</title>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <div class="global-header is-fixed">
+    <div class="container">
+      <!-- メニュー -->
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fab fa-twitter"></span>
+            <span>ホーム</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="fas fa-bolt"></span>
+            <span>モーメント</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header-right">
+        <!-- 検索 -->
+        <div class="search">
+          <form action="">
+            <input type="text" name="keyword" placeholder="キーワード検索">
+            <button type="submit" class="moment">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+        </div>
+        <!-- ログイン -->
+        <div class="login">
+          <a href="#">アカウントをお持ちの場合ログイン▼</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- プロフィールのヘッダー -->
+  <div id="profile-header" class="profile-header">
+    <!-- ヘッダー画像 -->
+    <div class="header-image"></div>
+    <!-- ナビバー -->
+    <div class="profile-navbar">
+      <div class="container">
+        <nav class="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">ツイート</a>
+            </li>
+            <li>
+              <a href="#">フォロー</a>
+            </li>
+            <li>
+              <a href="#">フォロワー</a>
+            </li>
+            <li>
+              <a href="#">いいね</a>
+            </li>
+            <li>
+              <a href="#">リスト</a>
+            </li>
+            <li>
+              <a href="#">モーメント</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO: -->
+  <div style="height: 1000px;"></div>
+</body>
+</html>
